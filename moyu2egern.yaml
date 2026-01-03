@@ -1,0 +1,14 @@
+name: moyu转Egern
+description: aaa
+author: bb
+
+
+body_rewrites:
+- response_regex:
+    match: https://ddgksf2013\.top/data\.json
+    find: (https://ddgksf2013\.top/scripts/(.+?)\.js)
+    replace: egern:///modules/new?url=http://script.hub/file/_start_/$1/_end_/$2.sgmodule %3Fjsc2%3D.%26headers%3DUser-Agent%253A%2520Quantumult%252520X%252F1.5.0%2520%28iPhone16%252C2%253B%2520iOS%252017.3%29%26type%3Dqx-rewrite%26target%3Dsurge-module%26del%3Dtrue%26jqEnabled%3Dtrue
+mitm:
+  hostnames:
+    includes:
+    - ddgksf2013.top
